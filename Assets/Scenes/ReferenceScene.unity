@@ -204,7 +204,7 @@ GameObject:
   m_IsActive: 1
 --- !u!20 &302938424
 Camera:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -225,7 +225,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 100
+  far clip plane: 10000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302938423}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d2e898c29900914cbeb2af28ed5c880, type: 3}
   m_Name: 
@@ -263,8 +263,8 @@ MonoBehaviour:
   extAssetsFilePath: Resources/ExtMat.dat
   extCustomFilePath: 
   loadMatrixFrom: 0
-  loadFileInt: 1
-  loadFileExt: 1
+  loadFileInt: 0
+  loadFileExt: 0
   cameraPos: {x: -2.0127232, y: 1.4885436, z: -2.9337618}
   cameraRot: {x: 0.280893, y: -0.18124595, z: 0.9399685, w: 0.06861725}
   cameraScale: {x: 0.9958748, y: 1.0007032, z: 1.0034072}
@@ -318,81 +318,8 @@ Transform:
   m_LocalScale: {x: 0.9958748, y: 1.0007032, z: 1.0034072}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &749574128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 749574130}
-  - component: {fileID: 749574129}
-  m_Layer: 0
-  m_Name: Camera - SAR Clone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &749574129
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749574128}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
-  m_projectionMatrixMode: 2
-  m_SensorSize: {x: 21.8, y: 29.4}
-  m_LensShift: {x: 0.09, y: 0.28}
-  m_GateFitMode: 0
-  m_FocalLength: 57.9
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 28.491213
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &749574130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749574128}
-  m_LocalRotation: {x: 0.18124618, y: 0.2808929, z: -0.06861665, w: 0.9399685}
-  m_LocalPosition: {x: -2.0127232, y: 1.4885436, z: -2.9337618}
-  m_LocalScale: {x: 0.9958756, y: 1.000704, z: 1.0034074}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 22.289001, y: 32.944, z: -1.6830001}
 --- !u!1 &1038637999
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +485,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
 --- !u!224 &1958203198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -669,5 +596,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
